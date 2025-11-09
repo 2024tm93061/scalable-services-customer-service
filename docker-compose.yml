@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  customer-service:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app
+      - ./customers.csv:/customers.csv
+      - ./customers.db:/customers.db
+    environment:
+      - DATABASE_URL=sqlite:///./customers.db
+      - PYTHONPATH=/ 
+
+networks:
+  default:
+    driver: bridge
