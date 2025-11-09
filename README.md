@@ -50,7 +50,3 @@ The `customers.csv` file contains sample customer data that can be used for loca
 ## Requirements
 
 Make sure to install the required dependencies listed in `requirements.txt` before running the application.
-
-## Notes
-
-This is a simple prototype and should be enhanced for production use, including error handling, logging, and security measures.
